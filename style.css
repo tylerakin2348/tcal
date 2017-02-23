@@ -3,6 +3,8 @@ Theme Name: Interest
 Author: Tyler Akin
 Description: Originally a Custom HTML Site, Then Converted To Wordpress
 Version: 0.0.1
+
+This file has been custimized for The Church at Louisville Site - 2017
 */
 
 
@@ -44,6 +46,10 @@ a:hover {
 h2 {
   display: block;
   font-size: 1.5em;
+}
+.container__inner {
+    margin: 0 auto;
+    width: 90%;
 }
 
 /******************************************

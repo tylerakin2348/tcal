@@ -5,6 +5,7 @@
       <br />
       <br />
     &copy; <?php echo date("Y"); ?> Tyler Akin
+      <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
   </p>
 </footer>
 <script src="<?php bloginfo('template_directory');?>/assets/js/jquery.js"></script>

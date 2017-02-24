@@ -21,11 +21,11 @@
     <?php endif; ?>
 
     <a href="#" id="show-nav">Show Navigation</a>
-    <nav class="main-navigation">
+
       <!-- <ul class="menu">
 
       </ul> -->
       <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-    </nav>
+
 
   </header>

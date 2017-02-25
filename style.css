@@ -59,6 +59,12 @@ Heading Styles
   margin-top: 2em;
   text-align: center; }
 
+.site-description {
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  color: #fff; }
+
 .blog-title a {
   color: #333333; }
 
@@ -76,8 +82,10 @@ Heading Styles
   margin: 0 auto; }
 
 .menu-item-has-children {
-  position: relative; }
+  position: relative;
+  transition: all 1s ease; }
   .menu-item-has-children .sub-menu {
+    max-height: 1em;
     background-color: #333;
     display: none;
     font-size: .9rem;
@@ -88,7 +96,8 @@ Heading Styles
 .menu-item-has-children:hover {
   padding-bottom: 2em; }
   .menu-item-has-children:hover .sub-menu {
-    display: inline; }
+    display: inline;
+    max-height: 25em; }
     .menu-item-has-children:hover .sub-menu a {
       color: #fff;
       display: block;
@@ -108,6 +117,8 @@ Heading Styles
   #show-nav:hover {
     background-color: #e6f2ff;
     border: 2px solid #e6f2ff; }
+  #show-nav:focus .menu-menu-1-container {
+    display: block; }
   @media screen and (min-width: 800px) {
     #show-nav {
       display: none; } }
@@ -116,14 +127,13 @@ Heading Styles
 Footer Styles
 ******************************************/
 #foot {
-  color: #333333;
-  background-color: #66b3ff;
-  height: 70px;
+  color: #ffffff;
+  background-color: #333333;
+  height: 101px;
   margin-top: 30px;
   padding-top: 35px;
   text-align: center;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%; }
 
 #foot a {

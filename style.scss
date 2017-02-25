@@ -63,6 +63,12 @@ Heading Styles
   margin-top: 2em;
   text-align: center;
 }
+.site-description {
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  color: #fff;
+}
 .blog-title a {
   color: #333333;
 }
@@ -82,7 +88,9 @@ Heading Styles
 }
 .menu-item-has-children {
   position: relative;
+  transition: all 1s ease;
    .sub-menu {
+     max-height: 1em;
      background-color: #333;
      display: none;
      font-size: .9rem;
@@ -95,6 +103,7 @@ Heading Styles
   padding-bottom: 2em;
   .sub-menu {
     display: inline;
+    max-height: 25em;
     a {
       color: #fff;
       display: block;
@@ -117,6 +126,11 @@ Heading Styles
     background-color: rgb(230, 242, 255);
     border: 2px solid rgb(230, 242, 255);
   }
+  &:focus {
+    .menu-menu-1-container {
+      display: block;
+    }
+  }
 
   @media screen and (min-width: 800px) {
     display: none;
@@ -128,14 +142,13 @@ Heading Styles
 Footer Styles
 ******************************************/
 #foot {
-  color: rgb(51, 51, 51);
-  background-color: rgb(102, 179, 255);
-  height: 70px;
+  color: #ffffff;
+  background-color: #333333;
+  height: 101px;
   margin-top: 30px;
   padding-top: 35px;
   text-align: center;
-  position: absolute; // temporary fix to push footer to the bottom. Will not work if the page scrolls.
-  bottom: 0;
+  position: relative;
   width: 100%; // temporary fix to push footer to the bottom. Will not work if the page scrolls.
 }
 #foot a {

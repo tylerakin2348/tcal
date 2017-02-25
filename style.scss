@@ -76,12 +76,28 @@ Heading Styles
 .menu-main-menu-container {
   margin: 0 auto;
 }
-.sub-menu {
-  display: none;
+.menu-item-has-children {
+  position: relative;
+   .sub-menu {
+     background-color: #333;
+     display: none;
+     font-size: .9rem;
+     position: absolute;
+       left: 0;
+       top: 2em;
+   }
 }
 .menu-item-has-children:hover {
+  padding-bottom: 2em;
   .sub-menu {
-    display: block;
+    display: inline;
+    a {
+      color: #fff;
+      display: block;
+      margin: 1em auto;
+      text-align: center;
+      padding-right: 0;
+    }
   }
 }
 #show-nav {

@@ -20,10 +20,10 @@
         </hgroup>
     <?php endif; ?>
 
-    <a href="#" id="show-nav">Show Navigation</a>
 
 
       <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+      <a href="#" id="show-nav">Show Menu</a>
 
 
   </header>

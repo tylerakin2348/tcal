@@ -40,14 +40,14 @@ $(".design-option-link").click(function() {
 
 // This controls show-nav functionality
 
-$(".main-navigation").hide();
+// $(".main-navigation").hide();
 
 
 $("#show-nav").click(function() {
-  if ($(".main-navigation").is(":hidden")) {
-    $(".main-navigation").slideDown("slow");
+  if ($(".menu-menu-1-container").is(":hidden")) {
+    $(".menu-menu-1-container").slideDown("slow");
   } else {
-    $(".main-navigation").slideUp("fast");
+    $(".menu-menu-1-container").slideUp("fast");
   }
 });
 
@@ -56,10 +56,10 @@ $('#show-nav').click(function() {
   $(this).toggleClass('active');
 
   if ($('#show-nav').hasClass('active')) {
-    $(this).text("Hide Navigation");
+    $(this).text("Hide Menu");
 
   } else {
-    $(this).text("Show Navigation");
+    $(this).text("Show Menu");
   }
 });
 

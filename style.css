@@ -204,6 +204,7 @@ Front Page Slider Styles -- https://codepen.io/cybrox/pen/cyiJI (Edited by Tyler
   overflow: hidden; }
   @media screen and (min-width: 800px) {
     #cssSlider {
+      float: left;
       width: 49%; } }
 
 #sliderImages {
@@ -306,6 +307,29 @@ Front Page Slider Styles -- https://codepen.io/cybrox/pen/cyiJI (Edited by Tyler
     margin-left: -3200px; }
   100% {
     margin-left: -3200px; } }
+/******************************************
+Homepage Latest Sermon Styles
+******************************************/
+.latest-sermon {
+  background-color: #333333;
+  height: 300px;
+  position: relative;
+  width: 100%; }
+  @media screen and (min-width: 800px) {
+    .latest-sermon {
+      float: right;
+      width: 50%; } }
+
+.mejs-container {
+  background: #fff;
+  width: 75% !important;
+  position: absolute !important;
+  height: 8em;
+  bottom: 50%;
+  left: 14% !important;
+  margin: 0 auto !important;
+  text-align: center; }
+
 /******************************************
 Blog Page Styles - Not currently being used
 ******************************************/

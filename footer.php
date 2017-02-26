@@ -1,10 +1,10 @@
 </div>
 <footer id="foot">
   <p>
-    <!-- <a href="index.php" class="to-top">Back to Top</a> -->
-      <!-- <br /> -->
-    &copy; <?php echo date("Y"); ?> The Church at Louisville
-      <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
+    <a href="index.php" class="to-top">Back to Top</a>
+      <br />
+      <br />
+    &copy; <?php echo date("Y"); ?> Tyler Akin
   </p>
 </footer>
 <script src="<?php bloginfo('template_directory');?>/assets/js/jquery.js"></script>

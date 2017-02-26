@@ -5,9 +5,9 @@
   <title>The Church at Louisville</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,700" rel="stylesheet" type="text/css">
-<?php wp_head(); ?>
+<?php wp_head();?>
 </head>
-<body>
+<body <?php  echo $wp_query->queried_object->post_name  ?>>
   <header id="top-header">
     <!-- logo code written by Kirk Wight of Automatic -->
     <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>

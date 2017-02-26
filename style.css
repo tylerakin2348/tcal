@@ -15,11 +15,19 @@ img {
   border-style: none;
   max-width: 100%; }
 
-p, li, ul, h1, h2, h3, h4, h5, h6 {
-  font-size: initial; }
+p,
+li,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: initial;
+  line-height: 1.5rem; }
 
 li {
-  display: inline;
   font-size: 1.3em;
   text-decoration: none;
   list-style: none; }
@@ -36,32 +44,81 @@ a {
   text-decoration: none; }
 
 h2 {
-  display: block;
   font-size: 1.5em; }
+
+.page {
+  min-height: 400px; }
 
 .container__inner {
   font-size: 0;
   margin: 0 auto;
-  text-align: center; }
+  text-align: left;
+  width: 90%; }
 
 /******************************************
 Heading Styles
 ******************************************/
 #top-header {
   border-bottom: 3px solid #333333;
-  display: block;
-  height: 100px;
-  padding-bottom: 0;
-  top: 0;
+  min-height: 9em;
   width: 100%; }
 
-.page {
-  font-size: 0;
-  min-height: 400px; }
+.menu-menu-1-container {
+  display: none;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center; }
+  @media screen and (min-width: 800px) {
+    .menu-menu-1-container {
+      display: block; } }
+  .menu-menu-1-container .menu-item:hover {
+    text-decoration: underline; }
 
-#top-header img {
-  max-height: 100px;
-  max-width: 307px; }
+.menu-item-has-children {
+  position: relative;
+  transition: all 1s ease; }
+  .menu-item-has-children .sub-menu {
+    max-height: 1em;
+    background-color: #333;
+    display: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 2em; }
+  .menu-item-has-children:hover {
+    padding-bottom: 9em; }
+    .menu-item-has-children:hover .sub-menu {
+      display: inline;
+      max-height: 25em; }
+      .menu-item-has-children:hover .sub-menu a {
+        color: #fff;
+        display: block;
+        margin: 1em auto;
+        text-align: center;
+        padding-right: 0; }
+
+#show-nav {
+  border: 1px solid #333;
+  border-radius: 30%;
+  color: #333;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding: 10px;
+  text-align: center; }
+  #show-nav:hover {
+    background-color: #333;
+    color: #ffffff; }
+  #show-nav:focus {
+    margin-bottom: 20px;
+    margin-top: 16px; }
+    #show-nav:focus .menu-menu-1-container {
+      display: block; }
+  @media screen and (min-width: 800px) {
+    #show-nav {
+      display: none; } }
 
 .site-title {
   margin-top: 2em;
@@ -73,64 +130,20 @@ Heading Styles
   bottom: 0;
   color: #fff; }
 
-.blog-title a {
-  color: #333333; }
+.arrow_to-top {
+  box-shadow: -1px -1px 1px #222222;
+  position: fixed;
+  transition: all 2s ease;
+  right: .2rem;
+  top: 75%;
+  width: 40px;
+  z-index: 10000; }
+  .arrow_to-top:active {
+    top: 65%; }
 
-.menu-menu-1-container {
-  display: none;
-  margin: 0 auto;
-  text-align: center; }
-  @media screen and (min-width: 800px) {
-    .menu-menu-1-container {
-      display: block; } }
-  .menu-menu-1-container .menu-item:hover {
-    text-decoration: underline; }
-
-.menu-main-menu-container {
-  margin: 0 auto; }
-
-.menu-item-has-children {
-  position: relative;
-  transition: all 1s ease; }
-  .menu-item-has-children .sub-menu {
-    max-height: 1em;
-    background-color: #333;
-    display: none;
-    font-size: .9rem;
-    position: absolute;
-    left: 0;
-    top: 2em; }
-
-.menu-item-has-children:hover {
-  padding-bottom: 2em; }
-  .menu-item-has-children:hover .sub-menu {
-    display: inline;
-    max-height: 25em; }
-    .menu-item-has-children:hover .sub-menu a {
-      color: #fff;
-      display: block;
-      margin: 1em auto;
-      text-align: center;
-      padding-right: 0; }
-
-#show-nav {
-  border: 1px solid #333;
-  border-radius: 30%;
-  color: #333;
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  padding: 10px 10px;
-  text-align: center; }
-  #show-nav:hover {
-    background-color: #e6f2ff;
-    border: 2px solid #e6f2ff; }
-  #show-nav:focus .menu-menu-1-container {
-    display: block; }
-  @media screen and (min-width: 800px) {
-    #show-nav {
-      display: none; } }
-
+/******************************************
+Specific Page Styles
+******************************************/
 .about-page__sub-pages {
   background-color: #333333;
   border: 2px solid #ffffff;
@@ -138,7 +151,7 @@ Heading Styles
   font-size: initial;
   height: 75px;
   margin: 0 auto;
-  padding: 5em 0 2em 0;
+  padding: 5em 0 2em;
   text-align: center;
   width: 100%; }
   .about-page__sub-pages:hover {
@@ -175,10 +188,7 @@ Footer Styles
   padding-bottom: -20px; }
 
 /******************************************
-Blog Styles
+Blog Page Styles - Not currently being used
 ******************************************/
-.blog-post {
-  margin: 0 auto 2em;
-  width: 95%; }
 
 /*# sourceMappingURL=style.css.map */

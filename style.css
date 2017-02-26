@@ -52,6 +52,14 @@ h2 {
     width: 90%;
 }
 
+.page {
+  min-height: 400px; }
+
+.container__inner {
+  font-size: 0;
+  margin: 0 auto;
+  width: 85%; }
+
 /******************************************
 Heading Styles
 ******************************************/
@@ -59,12 +67,11 @@ Heading Styles
 #top-header {
   background-color: rgb(255, 102, 102);
   display: block;
-  height: 90px;
-  padding-bottom: 0px;
-  position: absolute;
+  height: 100px;
+  margin-bottom: 50px;
   top: 0;
-  width: 100%;
-}
+  width: 100%; }
+
 #top-header img {
   max-height: 100px;
   max-width: 307px;
@@ -161,6 +168,9 @@ Design Options Blocks
 #blocks div {
   flex-direction: row;
   justify-content: space-around;
+}
+.menu-menu-1-container {
+  display: none;
   margin: 0 auto;
   margin-top: 1em;
   max-width: 426px;
@@ -353,6 +363,11 @@ Contact Styles
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   color: #333;
 }
+
+.about-page__sub-pages {
+  display: inline-block;
+  font-size: initial;
+  width: 25%; }
 
 /******************************************
 Footer Styles

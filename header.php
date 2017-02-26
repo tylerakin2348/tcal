@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tyler Akin Web Design</title>
+  <title>The Church at Louisville</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,700" rel="stylesheet" type="text/css">
 <?php wp_head(); ?>
@@ -17,16 +17,13 @@
     <?php else : ?>
         <hgroup>
             <h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
-            <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
         </hgroup>
     <?php endif; ?>
 
-    <a href="#" id="show-nav">Show Navigation</a>
-    <nav class="main-navigation">
-      <!-- <ul class="menu">
 
-      </ul> -->
+
       <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-    </nav>
+      <a href="#" id="show-nav">Show Menu</a>
+
 
   </header>

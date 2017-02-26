@@ -51,6 +51,9 @@ Heading Styles
   top: 0;
   width: 100%; }
 
+.page {
+  min-height: 400px; }
+
 #top-header img {
   max-height: 100px;
   max-width: 307px; }
@@ -133,7 +136,7 @@ Footer Styles
   margin-top: 30px;
   padding-top: 35px;
   text-align: center;
-  position: relative;
+  position: absolute;
   width: 100%; }
 
 #foot a {

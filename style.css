@@ -15,6 +15,9 @@ img {
   border-style: none;
   max-width: 100%; }
 
+p, li, ul, h1, h2, h3, h4, h5, h6 {
+  font-size: initial; }
+
 li {
   display: inline;
   font-size: 1.3em;
@@ -37,8 +40,9 @@ h2 {
   font-size: 1.5em; }
 
 .container__inner {
+  font-size: 0;
   margin: 0 auto;
-  width: 90%; }
+  text-align: center; }
 
 /******************************************
 Heading Styles
@@ -52,6 +56,7 @@ Heading Styles
   width: 100%; }
 
 .page {
+  font-size: 0;
   min-height: 400px; }
 
 #top-header img {
@@ -125,6 +130,27 @@ Heading Styles
   @media screen and (min-width: 800px) {
     #show-nav {
       display: none; } }
+
+.about-page__sub-pages {
+  background-color: #333333;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  font-size: initial;
+  height: 75px;
+  margin: 0 auto;
+  padding: 5em 0 2em 0;
+  text-align: center;
+  width: 100%; }
+  .about-page__sub-pages:hover {
+    background-color: #336633; }
+  .about-page__sub-pages a {
+    color: #fff;
+    padding: 5em 7em; }
+  .container__inner .about-page__sub-pages {
+    width: 99%; }
+    @media screen and (min-width: 800px) {
+      .container__inner .about-page__sub-pages {
+        width: 49%; } }
 
 /******************************************
 Footer Styles

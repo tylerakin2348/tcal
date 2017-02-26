@@ -3,54 +3,55 @@ Theme Name: Interest
 Author: Tyler Akin
 Description: Originally a Custom HTML Site, Then Converted To Wordpress
 Version: 0.0.1
-
-This file has been custimized for The Church at Louisville Site - 2017
 */
-
-
 /******************************************
 General Styles
 ******************************************/
-
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  /*background-color: rgb(230, 242, 255);*/
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
+
 img {
   border-style: none;
-  max-width: 100%;
-}
+  max-width: 100%; }
+
+p,
+li,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: initial;
+  line-height: 1.5rem; }
+
 li {
   font-size: 1.3em;
   text-decoration: none;
-  list-style: none;
-  float: left;
-}
+  list-style: none; }
 
 ul {
   margin: 0 auto;
   -webkit-padding-start: 0;
-  -webkit-margin-before: 0em;
-}
+  -webkit-margin-before: 0; }
 
 a {
-  color: rgb(255, 102, 102);
+  color: #333333;
   display: inline;
   padding-right: 10px;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(255, 12, 12);
-}
+  text-decoration: none; }
+
 h2 {
+  font-size: 1rem; }
+
+img {
   display: block;
-  font-size: 1.5em;
-}
-.container__inner {
-    margin: 0 auto;
-    width: 90%;
-}
+  margin: 0 auto;
+  margin-bottom: 2em;
+  height: 40%;
+  width: 100%; }
 
 .page {
   min-height: 400px; }
@@ -58,366 +59,148 @@ h2 {
 .container__inner {
   font-size: 0;
   margin: 0 auto;
-  width: 85%; }
+  text-align: left;
+  width: 90%; }
 
 /******************************************
 Heading Styles
 ******************************************/
-
 #top-header {
-  background-color: rgb(255, 102, 102);
-  display: block;
-  height: 100px;
-  margin-bottom: 50px;
-  top: 0;
+  border-bottom: 3px solid #333333;
+  min-height: 9em;
   width: 100%; }
 
-#top-header img {
-  max-height: 100px;
-  max-width: 307px;
-}
-.blog-title a {
-  color: #333333;
-}
-.main-navigation {
-  background-color: rgb(230, 242, 255);
-  border: 2px solid rgb(230, 242, 255);
-  color: rgb(51, 51, 51);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  list-style: none;
-  margin-top: -10px;
-  min-height: 5em;
-  position: absolute;
-  right: 0;
-  top: 7em;
-  width: 100%;
-}
-.main-navigation a {
-  color: #333;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-@media screen and (min-width: 750px) {
-  .main-navigation {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1050px) {
-  .main-navigation {
-    width: 33.3%;
-  }
-}
-.main-navigation a:hover {
-  text-decoration: underline;
-}
-.menu-main-menu-container {
-  margin: 0 auto;
-}
-#show-nav {
-  color: #333;
-  max-width: 70px;
-  padding: 30px 10px 20px 10px;
-  text-align: center;
-  margin: 0px 0px 0px 10px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-#show-nav:active {
-  /* Safari */
-  -webkit-transform: rotate(-20deg);
-  /* Firefox */
-  -moz-transform: rotate(-20deg);
-  /* IE */
-  -ms-transform: rotate(-20deg);
-  /* Opera */
-  -o-transform: rotate(-20deg);
-}
-#show-nav.active {
-  background-color: rgb(230, 242, 255);
-  border: 2px solid rgb(230, 242, 255);
-  /* Safari */
-  -webkit-transform: rotate(-20deg);
-  /* Firefox */
-  -moz-transform: rotate(-20deg);
-  /* IE */
-  -ms-transform: rotate(-20deg);
-  /* Opera */
-  -o-transform: rotate(-20deg);
-}
-#show-nav:hover {
-  background-color: rgb(230, 242, 255);
-  border: 2px solid rgb(230, 242, 255);
-}
-
-/******************************************
-Design Options Blocks
-******************************************/
-
-#blocks {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5em;
-  position: relative;
-}
-
-/* Affects positioning of template blocks */
-
-#blocks div {
-  flex-direction: row;
-  justify-content: space-around;
-}
 .menu-menu-1-container {
   display: none;
+  line-height: 1.5;
   margin: 0 auto;
-  margin-top: 1em;
-  max-width: 426px;
+  text-align: center; }
+  @media screen and (min-width: 800px) {
+    .menu-menu-1-container {
+      display: block; } }
+  .menu-menu-1-container .menu-item:hover {
+    text-decoration: underline; }
+
+.menu-item-has-children {
   position: relative;
-}
+  transition: all 1s ease; }
+  .menu-item-has-children .sub-menu {
+    max-height: 1em;
+    background-color: #333;
+    display: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 2em; }
+  .menu-item-has-children:hover {
+    padding-bottom: 9em; }
+    .menu-item-has-children:hover .sub-menu {
+      display: inline;
+      max-height: 25em; }
+      .menu-item-has-children:hover .sub-menu a {
+        color: #fff;
+        display: block;
+        margin: 1em auto;
+        text-align: center;
+        padding-right: 0; }
 
-/* Affects positioning of hidden overlays */
-
-#blocks div div {
+#show-nav {
+  border: 1px solid #333;
+  border-radius: 30%;
+  color: #333;
+  display: block;
   margin: 0 auto;
-  margin-top: -19.4em;
-  max-width: 426px;
+  width: 100px;
+  padding: 10px;
+  text-align: center; }
+  #show-nav:hover {
+    background-color: #333;
+    color: #ffffff; }
+  #show-nav:focus {
+    margin-bottom: 20px;
+    margin-top: 16px; }
+    #show-nav:focus .menu-menu-1-container {
+      display: block; }
+  @media screen and (min-width: 800px) {
+    #show-nav {
+      display: none; } }
+
+.site-title {
+  margin-top: 2em;
+  text-align: center; }
+
+.site-description {
+  font-size: 1rem;
   position: relative;
-}
-@media screen and (min-width: 750px) {
-  #blocks div {
-    max-width: 50%;
-  }
-  #blocks div div {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 1050px) {
-  #blocks div {
-    max-width: 33.3%;
-  }
-  #blocks div div {
-    max-width: 100%;
-  }
-}
-#blocks div img {
-  height: 16em;
-}
-#template-block, #wordpress-block, #custom-work-block {
-  width: 100%;
-}
+  bottom: 0;
+  color: #fff; }
+
+.arrow_to-top {
+  box-shadow: -1px -1px 1px #222222;
+  height: 10%;
+  position: fixed;
+  transition: all 2s ease;
+  right: .2rem;
+  top: 75%;
+  width: 40px;
+  z-index: 10000; }
+  .arrow_to-top:active {
+    top: 65%; }
 
 /******************************************
-Hidden Design Block Styles
+Specific Page Styles
 ******************************************/
-
-#wordpress-hidden, #scratch-hidden, #template-hidden {
-  color: rgb(255, 255, 255);
-  font-size: 1.1em;
-  margin: 0 auto;
-  padding-top: 2em;
-  text-align: center;
-  width: 320px;
-}
-.design-info-maintain, .design-info-word, .design-info-scratch {
-  height: 16em;
-  background-color: rgb(102, 140, 255);
-  position: absolute;
-  font-family: 'Crimson Text', serif;
-  opacity: .9;
-}
-#hidden-scratch-photo-center {
-  width: 36%;
-  display: inline;
-  margin-right: 0px;
-  margin-left: 360px;
-  margin-top: 3px;
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-color: grey;
-  border-radius: 0px;
-}
-
-/* Info Buttons Hide/Show */
-
-.hide-info-button-scratch, .hide-info-button-template, .hide-info-button-word {
-  bottom: 1em;
-  color: white;
-  right: 5em;
-  padding: 11px 16px;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  position: absolute;
-}
-.more-info-button-template, .more-info-button-scratch, .more-info-button-word {
-  bottom: 1em;
-  color: white;
-  left: 5em;
-  padding: 11px 10px;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  position: absolute;
-}
-.more-info-button-template:hover, .more-info-button-scratch:hover, .more-info-button-word:hover {
-  color: #333;
-  background-color: rgb(230, 242, 255);
-  padding: 11px 10px;
-  border: 2px solid rgb(230, 242, 255);
-}
-.hide-info-button-template:hover, .hide-info-button-scratch:hover, .hide-info-button-word:hover {
-  color: #333;
-  background-color: rgb(230, 242, 255);
-  padding: 11px 16px;
-  border: 2px solid rgb(230, 242, 255);
-}
-
-/******************************************
-About Styles
-******************************************/
-
-.about {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.about p {
-  margin: 3em auto 0em auto;
-}
-#about-header {
-  margin-top: 3em;
-  margin-bottom: 80px;
-  text-align: center;
-  font-size: 2em;
-  color: rgb(51, 51, 51);
-  clear: both;
-}
-#tyler-about-pic {
-  border-radius: 100px;
-  height: 100%;
-  margin: 0 auto;
-  width: 350px;
-}
-.about-paragraph {
-  display: inline;
-  font-size: 1.1em;
-  line-height: 1.4em;
-  margin: 0 auto;
-  margin-top: 50px;
-  max-width: 500px;
-  text-align: center;
-}
-@media screen and (min-width: 750px) {
-  .about-paragraph {
-    margin-top: 5em;
-    text-align: left;
-  }
-}
-@media screen and (min-width: 850px) {
-  .about-paragraph {
-    margin-top: 3em;
-    max-width: 40%;
-    text-align: left;
-  }
-}
-
-/******************************************
-Contact Styles
-******************************************/
-
-.contact {
-  display: block;
-}
-#contact-header {
-  margin-top: 100px;
-  margin-bottom: 80px;
-  text-align: center;
-  font-size: 2em;
-  color: rgb(51, 51, 51);
-}
-.contact-paragraph {
-  text-align: center;
-  display: block;
-  margin: 0px 1% 2em 1%;
-  padding-bottom: 25px;
-  font-size: 1.1em;
-  line-height: 1.2em;
-}
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.contact-paragraph a {
-  background-color: #333;
-  box-shadow: 3px 0px 2px 1px rgba(0, 0, 0, 0.5);
-  display: block;
-  padding: 1em;
-  margin: 0 auto;
-  width: 10em;
-}
-.contact-paragraph a:hover {
-  background-color: rgb(255, 102, 102);
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-  color: #333;
-}
-
 .about-page__sub-pages {
+  background-color: #333333;
+  border: 2px solid #ffffff;
   display: inline-block;
   font-size: initial;
-  width: 25%; }
+  height: 75px;
+  margin: 0 auto;
+  padding: 5em 0 2em;
+  text-align: center;
+  width: 100%; }
+  .about-page__sub-pages:hover {
+    background-color: #336633; }
+  .about-page__sub-pages a {
+    color: #fff;
+    padding: 5em 7em; }
+  .container__inner .about-page__sub-pages {
+    width: 99%; }
+    @media screen and (min-width: 800px) {
+      .container__inner .about-page__sub-pages {
+        width: 49%; } }
 
 /******************************************
 Footer Styles
 ******************************************/
-
 #foot {
-  color: rgb(51, 51, 51);
-  background-color: rgb(102, 179, 255);
-  height: 70px;
+  color: #ffffff;
+  background-color: #333333;
+  height: 101px;
   margin-top: 30px;
   padding-top: 35px;
   text-align: center;
-}
+  position: absolute;
+  width: 100%; }
+
 #foot a {
   text-align: center;
-  color: rgb(51, 51, 51);
+  color: #333333;
   float: none;
-  padding-right: 0px;
-}
+  padding-right: 0; }
+
 #foot p {
-  padding-bottom: -20px;
-}
-.design-labels {
-  text-align: center;
-}
-
-/******************************************
-Design Option Page Styles
-******************************************/
-
-.design-paragraph-headers {
-  font-size: 1.3em;
-  margin: 2em auto 0em auto;
-  text-align: center;
-  width: 90%;
-}
-.design-paragraphs {
-  font-size: 1.2em;
-  margin: .5em auto 0em auto;
-  text-align: justify;
-  text-indent: -5px;
-  width: 90%;
-}
+  padding-bottom: -20px; }
 
 /******************************************
 Blog Styles
+=======
+/******************************************
+Blog Page Styles - Not currently being used
+>>>>>>> staging
 ******************************************/
 
-.blog-post {
-  margin: 0 auto;
-  margin-bottom: 2em;
-  width: 95%;
-}
+/*# sourceMappingURL=style.css.map */

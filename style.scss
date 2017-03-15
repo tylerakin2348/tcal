@@ -167,7 +167,7 @@ Heading Styles
   width: 40px;
   z-index: 10000;
   &:active {
-    top: 65%;
+    top: 70%;
   }
 }
 /******************************************
@@ -203,11 +203,23 @@ Specific Page Styles
 .our-sunday-gatherings__content {
   display: inline-block;
   margin: 0 auto;
-  .church-map {
-    display: inline-block;
+  @media screen and (min-width: 800px) {
+    width: 50%;
   }
 }
-
+.church-map {
+  display: inline-block;
+  width: 100%;
+  @media screen and (min-width: 800px) {
+    float: right;
+    width: 50%;
+  }
+  iframe {
+    overflow: hidden;
+    height: 90%;
+    width: 100%;
+  }
+}
 
 /******************************************
 Footer Styles
@@ -234,7 +246,7 @@ Footer Styles
 
 
 /******************************************
-Front Page Slider Styles -- https://codepen.io/cybrox/pen/cyiJI (Edited by Tyler Akin)
+Front Page Slider Styles -- https://codepen.io/cybrox/pen/cyiJI (Edited by Tyler Akin) Note: Animation disabled below.
 ******************************************/
 #cssSlider {
   width: 100%;
@@ -250,71 +262,71 @@ Front Page Slider Styles -- https://codepen.io/cybrox/pen/cyiJI (Edited by Tyler
 	width : 4000px;
 	height: 500px;
 	overflow: hidden;
-
-	animation: slide 32s infinite;
-	-moz-animation: slide 32s infinite;
-	-webkit-animation: slide 32s infinite;
-	-o-animation: slide 32s infinite;
+  //
+	// animation: slide 32s infinite;
+	// -moz-animation: slide 32s infinite;
+	// -webkit-animation: slide 32s infinite;
+	// -o-animation: slide 32s infinite;
 }
 
 #sliderImages img {
 	float: left;
   height: initial;
-  width: initial;
+  width: 13%; // Set for Titus slider image
 }
 
-@keyframes slide{
-	0%{margin-left: 0px;}
-	17%{margin-left: 0px;}
-	20%{margin-left: -800px;}
-	37%{margin-left: -800px;}
-	40%{margin-left: -1600px;}
-	57%{margin-left: -1600px;}
-	60%{margin-left: -2400px;}
-	77%{margin-left: -2400px;}
-	80%{margin-left: -3200px;}
-	97%{margin-left: -3200px;}
-	100%{margin-left: 0px;}
-}
+// @keyframes slide{
+// 	0%{margin-left: 0px;}
+// 	17%{margin-left: 0px;}
+// 	20%{margin-left: -800px;}
+// 	37%{margin-left: -800px;}
+// 	40%{margin-left: -1600px;}
+// 	57%{margin-left: -1600px;}
+// 	60%{margin-left: -2400px;}
+// 	77%{margin-left: -2400px;}
+// 	80%{margin-left: -3200px;}
+// 	97%{margin-left: -3200px;}
+// 	100%{margin-left: 0px;}
+// }
 
-@-moz-keyframes slide{
-	0%{margin-left: 0px;}
-	17%{margin-left: 0px;}
-	20%{margin-left: -800px;}
-	37%{margin-left: -800px;}
-	40%{margin-left: -1600px;}
-	57%{margin-left: -1600px;}
-	60%{margin-left: -2400px;}
-	77%{margin-left: -2400px;}
-	80%{margin-left: -3200px;}
-	100%{margin-left: -3200px;}
-}
+// @-moz-keyframes slide{
+// 	0%{margin-left: 0px;}
+// 	17%{margin-left: 0px;}
+// 	20%{margin-left: -800px;}
+// 	37%{margin-left: -800px;}
+// 	40%{margin-left: -1600px;}
+// 	57%{margin-left: -1600px;}
+// 	60%{margin-left: -2400px;}
+// 	77%{margin-left: -2400px;}
+// 	80%{margin-left: -3200px;}
+// 	100%{margin-left: -3200px;}
+// }
 
-@-webkit-keyframes slide{
-	0%{margin-left: 0px;}
-	17%{margin-left: 0px;}
-	20%{margin-left: -800px;}
-	37%{margin-left: -800px;}
-	40%{margin-left: -1600px;}
-	57%{margin-left: -1600px;}
-	60%{margin-left: -2400px;}
-	77%{margin-left: -2400px;}
-	80%{margin-left: -3200px;}
-	100%{margin-left: -3200px;}
-}
-
-@-o-keyframes slide{
-	0%{margin-left: 0px;}
-	17%{margin-left: 0px;}
-	20%{margin-left: -800px;}
-	37%{margin-left: -800px;}
-	40%{margin-left: -1600px;}
-	57%{margin-left: -1600px;}
-	60%{margin-left: -2400px;}
-	77%{margin-left: -2400px;}
-	80%{margin-left: -3200px;}
-	100%{margin-left: -3200px;}
-}
+// @-webkit-keyframes slide{
+// 	0%{margin-left: 0px;}
+// 	17%{margin-left: 0px;}
+// 	20%{margin-left: -800px;}
+// 	37%{margin-left: -800px;}
+// 	40%{margin-left: -1600px;}
+// 	57%{margin-left: -1600px;}
+// 	60%{margin-left: -2400px;}
+// 	77%{margin-left: -2400px;}
+// 	80%{margin-left: -3200px;}
+// 	100%{margin-left: -3200px;}
+// }
+//
+// @-o-keyframes slide{
+// 	0%{margin-left: 0px;}
+// 	17%{margin-left: 0px;}
+// 	20%{margin-left: -800px;}
+// 	37%{margin-left: -800px;}
+// 	40%{margin-left: -1600px;}
+// 	57%{margin-left: -1600px;}
+// 	60%{margin-left: -2400px;}
+// 	77%{margin-left: -2400px;}
+// 	80%{margin-left: -3200px;}
+// 	100%{margin-left: -3200px;}
+// }
 
 /******************************************
 Homepage Latest Sermon Styles
@@ -327,6 +339,11 @@ Homepage Latest Sermon Styles
   @media screen and (min-width: 800px) {
     float: right;
     width: 50%;
+  }
+  p {
+    color: #fff;
+    margin-top: 5em;
+    text-align: center;
   }
 }
 

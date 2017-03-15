@@ -15,6 +15,7 @@ img {
   border-style: none;
   max-width: 100%;
 }
+
 p,
 li,
 ul,
@@ -28,7 +29,7 @@ h6 {
   line-height: 1.5rem;
 }
 li {
-  // display: inline;
+  // display: inline;s
   font-size: 1.3em;
   text-decoration: none;
   list-style: none;
@@ -44,6 +45,7 @@ a {
   padding-right: 10px;
   text-decoration: none;
 }
+
 h2 {
   font-size: 1rem;
 }
@@ -53,6 +55,7 @@ img {
   margin-bottom: 2em;
   height: 40%;
   width: 100%;
+
 }
 .page {
   min-height: 400px;
@@ -70,10 +73,9 @@ Heading Styles
   border-bottom: 3px solid #333333;
   min-height: 9em;
   width: 100%;
-  // img {
-  //   max-height: 100px;
-  //   max-width: 307px;
-  // }
+  @media screen and (min-width: 800px) {
+    margin-bottom: 3em;
+  }
 }
 .menu-menu-1-container {
   display: none;
@@ -90,6 +92,7 @@ Heading Styles
     text-decoration: underline;
   }
 }
+
 .menu-item-has-children {
   position: relative;
   transition: all 1s ease;
@@ -126,6 +129,7 @@ Heading Styles
   display: block;
   margin: 0 auto;
   width: 100px;
+
   padding: 10px;
   text-align: center;
   &:hover {
@@ -140,10 +144,12 @@ Heading Styles
       display: block;
     }
   }
+
   @media screen and (min-width: 800px) {
     display: none;
   }
 }
+
 .site-title {
   margin-top: 2em;
   text-align: center;
@@ -164,7 +170,7 @@ Heading Styles
   width: 40px;
   z-index: 10000;
   &:active {
-    top: 65%;
+    top: 70%;
   }
 }
 /******************************************
@@ -194,6 +200,28 @@ Specific Page Styles
       width: 49%;
     }
   }
+
+}
+// Our Sunday Gatherings
+.our-sunday-gatherings__content {
+  display: inline-block;
+  margin: 0 auto;
+  @media screen and (min-width: 800px) {
+    width: 50%;
+  }
+}
+.church-map {
+  display: inline-block;
+  width: 100%;
+  @media screen and (min-width: 800px) {
+    float: right;
+    width: 50%;
+  }
+  iframe {
+    overflow: hidden;
+    height: 90%;
+    width: 100%;
+  }
 }
 
 /******************************************
@@ -218,6 +246,129 @@ Footer Styles
 #foot p {
   padding-bottom: -20px;
 }
+
+
+/******************************************
+Front Page Slider Styles -- https://codepen.io/cybrox/pen/cyiJI (Edited by Tyler Akin) Note: Animation disabled below.
+******************************************/
+#cssSlider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  @media screen and (min-width: 800px) {
+    float: left;
+    width: 49%;
+  }
+}
+
+#sliderImages {
+	width : 4000px;
+	height: 500px;
+	overflow: hidden;
+  //
+	// animation: slide 32s infinite;
+	// -moz-animation: slide 32s infinite;
+	// -webkit-animation: slide 32s infinite;
+	// -o-animation: slide 32s infinite;
+}
+
+#sliderImages img {
+	float: left;
+  height: initial;
+  width: 13%; // Set for Titus slider image
+}
+
+// @keyframes slide{
+// 	0%{margin-left: 0px;}
+// 	17%{margin-left: 0px;}
+// 	20%{margin-left: -800px;}
+// 	37%{margin-left: -800px;}
+// 	40%{margin-left: -1600px;}
+// 	57%{margin-left: -1600px;}
+// 	60%{margin-left: -2400px;}
+// 	77%{margin-left: -2400px;}
+// 	80%{margin-left: -3200px;}
+// 	97%{margin-left: -3200px;}
+// 	100%{margin-left: 0px;}
+// }
+
+// @-moz-keyframes slide{
+// 	0%{margin-left: 0px;}
+// 	17%{margin-left: 0px;}
+// 	20%{margin-left: -800px;}
+// 	37%{margin-left: -800px;}
+// 	40%{margin-left: -1600px;}
+// 	57%{margin-left: -1600px;}
+// 	60%{margin-left: -2400px;}
+// 	77%{margin-left: -2400px;}
+// 	80%{margin-left: -3200px;}
+// 	100%{margin-left: -3200px;}
+// }
+
+// @-webkit-keyframes slide{
+// 	0%{margin-left: 0px;}
+// 	17%{margin-left: 0px;}
+// 	20%{margin-left: -800px;}
+// 	37%{margin-left: -800px;}
+// 	40%{margin-left: -1600px;}
+// 	57%{margin-left: -1600px;}
+// 	60%{margin-left: -2400px;}
+// 	77%{margin-left: -2400px;}
+// 	80%{margin-left: -3200px;}
+// 	100%{margin-left: -3200px;}
+// }
+//
+// @-o-keyframes slide{
+// 	0%{margin-left: 0px;}
+// 	17%{margin-left: 0px;}
+// 	20%{margin-left: -800px;}
+// 	37%{margin-left: -800px;}
+// 	40%{margin-left: -1600px;}
+// 	57%{margin-left: -1600px;}
+// 	60%{margin-left: -2400px;}
+// 	77%{margin-left: -2400px;}
+// 	80%{margin-left: -3200px;}
+// 	100%{margin-left: -3200px;}
+// }
+
+/******************************************
+Homepage Latest Sermon Styles
+******************************************/
+.latest-sermon {
+  background-color: #000000;
+  height: 300px;
+  position: relative;
+  width: 100%;
+  @media screen and (min-width: 800px) {
+    float: right;
+    width: 50%;
+  }
+  p {
+    color: #fff;
+    margin-top: 5em;
+    text-align: center;
+  }
+}
+
+.mejs-container {
+  background: #fff;
+  width: 75% !important;
+  position: absolute !important;
+  height: 8em;
+  bottom: 50%;
+  left: 14% !important;
+  margin: 0 auto !important;
+  text-align: center;
+  // button {
+  //   background: #333333 !important;
+  // }
+}
+.mejs-controls {
+  background: brown !important;
+}
+
+
+
 /******************************************
 Blog Page Styles - Not currently being used
 ******************************************/

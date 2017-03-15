@@ -78,6 +78,8 @@ Heading Styles
   @media screen and (min-width: 800px) {
     .menu-menu-1-container {
       display: block; } }
+  .menu-menu-1-container .menu {
+    margin: 1em auto; }
   .menu-menu-1-container .menu-item:hover {
     text-decoration: underline; }
 
@@ -95,7 +97,7 @@ Heading Styles
     width: 100%;
     top: 2em; }
   .menu-item-has-children:hover {
-    padding-bottom: 9em; }
+    padding-bottom: 10em; }
     .menu-item-has-children:hover .sub-menu {
       display: inline;
       max-height: 25em; }

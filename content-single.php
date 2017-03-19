@@ -1,7 +1,7 @@
-<div class="blog-post">
-	<h2 class="blog-post-title"><?php the_title(); ?></h2>
-	<p class="blog-post-meta"><?php the_date(); ?> by <a href="#"><?php the_author(); ?></a></p>
+<div class="page">
+  <div class="container__inner">
 
- <?php the_content(); ?>
-
+     <?php the_content(); ?>
+     <a href="#" style="top:0";><img class="arrow_to-top" src="<?php bloginfo('template_directory');?>/assets/img/arrow.svg" alt=""></a>
+  </div>
 </div><!-- /.blog-post -->

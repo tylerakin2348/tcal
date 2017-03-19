@@ -9,12 +9,11 @@ General Styles
 ******************************************/
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
+
 img {
   border-style: none;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 p,
 li,
@@ -26,74 +25,71 @@ h4,
 h5,
 h6 {
   font-size: initial;
-  line-height: 1.5rem;
-}
+  line-height: 1.5rem; }
+
 li {
-  // display: inline;s
   font-size: 1.3em;
   text-decoration: none;
-  list-style: none;
-}
+  list-style: none; }
+
 ul {
   margin: 0 auto;
   -webkit-padding-start: 0;
-  -webkit-margin-before: 0;
-}
+  -webkit-margin-before: 0; }
+
 a {
   color: #333333;
   display: inline;
   padding-right: 10px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 h2 {
-  font-size: 1rem;
-}
+  font-size: 1rem; }
+
 img {
   display: block;
   margin: 0 auto;
   margin-bottom: 2em;
   height: 40%;
-  width: 100%;
+  width: 100%; }
 
-}
+.home-page,
 .page {
-  min-height: 400px;
-}
-.container__inner {
   font-size: 0;
   margin: 0 auto;
+  min-height: 400px;
   text-align: left;
-  width: 90%;
-}
+  width: 100%; }
+
+.page {
+  width: 90%; }
+
 /******************************************
 Heading Styles
 ******************************************/
 #top-header {
   border-bottom: 3px solid #333333;
   min-height: 9em;
-  width: 100%;
+  width: 100%; }
   @media screen and (min-width: 800px) {
-    margin-bottom: 3em;
-  }
-}
+    #top-header {
+      margin-bottom: 3em; } }
+
 .menu-menu-1-container {
   display: none;
   line-height: 1.5;
   margin: 0 auto;
-  text-align: center;
+  text-align: center; }
   @media screen and (min-width: 800px) {
-    display: block;
-  }
-  .menu-item:hover {
-    text-decoration: underline;
-  }
-}
+    .menu-menu-1-container {
+      display: block; } }
+  .menu-menu-1-container .menu-item:hover {
+    text-decoration: underline; }
 
 .menu-item-has-children {
   position: relative;
-  transition: all 1s ease;
-  .sub-menu {
+  transition: all 1s ease; }
+  .menu-item-has-children .sub-menu {
     max-height: 1em;
     background-color: #333;
     display: none;
@@ -102,23 +98,19 @@ Heading Styles
     position: absolute;
     left: 0;
     width: 100%;
-    top: 2em;
-  }
-  &:hover {
-    padding-bottom: 9em;
-    .sub-menu {
+    top: 2em; }
+  .menu-item-has-children:hover {
+    padding-bottom: 9em; }
+    .menu-item-has-children:hover .sub-menu {
       display: inline;
-      max-height: 25em;
-      a {
+      max-height: 25em; }
+      .menu-item-has-children:hover .sub-menu a {
         color: #fff;
         display: block;
         margin: 1em auto;
         text-align: center;
-        padding-right: 0;
-      }
-    }
-  }
-}
+        padding-right: 0; }
+
 #show-nav {
   border: 1px solid #333;
   border-radius: 30%;
@@ -126,37 +118,30 @@ Heading Styles
   display: block;
   margin: 0 auto;
   width: 100px;
-
   padding: 10px;
-  text-align: center;
-  &:hover {
+  text-align: center; }
+  #show-nav:hover {
     background-color: #333;
-    color: #ffffff;
-  }
-  &:focus {
+    color: #ffffff; }
+  #show-nav:focus {
     margin-bottom: 20px;
-    margin-top: 16px;
-
-    .menu-menu-1-container {
-      display: block;
-    }
-  }
-
+    margin-top: 16px; }
+    #show-nav:focus .menu-menu-1-container {
+      display: block; }
   @media screen and (min-width: 800px) {
-    display: none;
-  }
-}
+    #show-nav {
+      display: none; } }
 
 .site-title {
   margin-top: 2em;
-  text-align: center;
-}
+  text-align: center; }
+
 .site-description {
   font-size: 1rem;
   position: relative;
   bottom: 0;
-  color: #fff;
-}
+  color: #fff; }
+
 .arrow_to-top {
   box-shadow: -1px -1px 1px #222222;
   height: 10%;
@@ -165,17 +150,15 @@ Heading Styles
   right: .2rem;
   top: 75%;
   width: 40px;
-  z-index: 10000;
-  &:active {
-    top: 70%;
-  }
-}
+  z-index: 10000; }
+  .arrow_to-top:active {
+    top: 70%; }
+
 /******************************************
 Specific Page Styles
 ******************************************/
 .about-page__sub-pages {
   background-color: #333333;
-  // background-image: url("tcal.png");
   border: 2px solid #ffffff;
   display: inline-block;
   font-size: initial;
@@ -183,43 +166,36 @@ Specific Page Styles
   margin: 0 auto;
   padding: 5em 0 2em;
   text-align: center;
-  width: 100%;
-  &:hover {
-    background-color: #336633;
-  }
-  a {
+  width: 100%; }
+  .about-page__sub-pages:hover {
+    background-color: #336633; }
+  .about-page__sub-pages a {
     color: #fff;
-    padding: 5em 7em;
-  }
-  @at-root .container__inner & {
-    width: 99%;
+    padding: 5em 7em; }
+  .container__inner .about-page__sub-pages {
+    width: 99%; }
     @media screen and (min-width: 800px) {
-      width: 49%;
-    }
-  }
+      .container__inner .about-page__sub-pages {
+        width: 49%; } }
 
-}
-// Our Sunday Gatherings
 .our-sunday-gatherings__content {
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto; }
   @media screen and (min-width: 800px) {
-    width: 50%;
-  }
-}
+    .our-sunday-gatherings__content {
+      width: 50%; } }
+
 .church-map {
   display: inline-block;
-  width: 100%;
+  width: 100%; }
   @media screen and (min-width: 800px) {
-    float: right;
-    width: 50%;
-  }
-  iframe {
+    .church-map {
+      float: right;
+      width: 50%; } }
+  .church-map iframe {
     overflow: hidden;
     height: 90%;
-    width: 100%;
-  }
-}
+    width: 100%; }
 
 /******************************************
 Footer Styles
@@ -232,120 +208,63 @@ Footer Styles
   padding-top: 35px;
   text-align: center;
   position: absolute;
-  width: 100%;
-}
+  width: 100%; }
+
 #foot a {
   text-align: center;
-  color: rgb(51, 51, 51);
+  color: #333333;
   float: none;
-  padding-right: 0;
-}
-#foot p {
-  padding-bottom: -20px;
-}
+  padding-right: 0; }
 
+#foot p {
+  padding-bottom: -20px; }
 
 /******************************************
 Front Page Slider Styles -- https://codepen.io/cybrox/pen/cyiJI (Edited by Tyler Akin) Note: Animation disabled below.
 ******************************************/
-#cssSlider {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
+.homepage__content {
+  display: flex;
+  flex-direction: column; }
   @media screen and (min-width: 800px) {
-    float: left;
-    width: 49%;
-  }
-}
+    .homepage__content {
+      flex-direction: row; } }
+
+#cssSlider {
+  overflow: hidden; }
+  @media screen and (min-width: 800px) {
+    #cssSlider {
+      display: inline-block;
+      width: 50%; } }
 
 #sliderImages {
-	width : 4000px;
-	height: 500px;
-	overflow: hidden;
-  //
-	// animation: slide 32s infinite;
-	// -moz-animation: slide 32s infinite;
-	// -webkit-animation: slide 32s infinite;
-	// -o-animation: slide 32s infinite;
-}
+  width: 100%;
+  overflow: hidden; }
 
 #sliderImages img {
-	float: left;
-  height: initial;
-  width: 13%; // Set for Titus slider image
-}
-
-// @keyframes slide{
-// 	0%{margin-left: 0px;}
-// 	17%{margin-left: 0px;}
-// 	20%{margin-left: -800px;}
-// 	37%{margin-left: -800px;}
-// 	40%{margin-left: -1600px;}
-// 	57%{margin-left: -1600px;}
-// 	60%{margin-left: -2400px;}
-// 	77%{margin-left: -2400px;}
-// 	80%{margin-left: -3200px;}
-// 	97%{margin-left: -3200px;}
-// 	100%{margin-left: 0px;}
-// }
-
-// @-moz-keyframes slide{
-// 	0%{margin-left: 0px;}
-// 	17%{margin-left: 0px;}
-// 	20%{margin-left: -800px;}
-// 	37%{margin-left: -800px;}
-// 	40%{margin-left: -1600px;}
-// 	57%{margin-left: -1600px;}
-// 	60%{margin-left: -2400px;}
-// 	77%{margin-left: -2400px;}
-// 	80%{margin-left: -3200px;}
-// 	100%{margin-left: -3200px;}
-// }
-
-// @-webkit-keyframes slide{
-// 	0%{margin-left: 0px;}
-// 	17%{margin-left: 0px;}
-// 	20%{margin-left: -800px;}
-// 	37%{margin-left: -800px;}
-// 	40%{margin-left: -1600px;}
-// 	57%{margin-left: -1600px;}
-// 	60%{margin-left: -2400px;}
-// 	77%{margin-left: -2400px;}
-// 	80%{margin-left: -3200px;}
-// 	100%{margin-left: -3200px;}
-// }
-//
-// @-o-keyframes slide{
-// 	0%{margin-left: 0px;}
-// 	17%{margin-left: 0px;}
-// 	20%{margin-left: -800px;}
-// 	37%{margin-left: -800px;}
-// 	40%{margin-left: -1600px;}
-// 	57%{margin-left: -1600px;}
-// 	60%{margin-left: -2400px;}
-// 	77%{margin-left: -2400px;}
-// 	80%{margin-left: -3200px;}
-// 	100%{margin-left: -3200px;}
-// }
+  margin: 0 auto;
+  text-align: center;
+  left: 0; }
+  @media screen and (min-width: 800px) {
+    #sliderImages img {
+      float: left;
+      width: 100%; } }
 
 /******************************************
 Homepage Latest Sermon Styles
 ******************************************/
 .latest-sermon {
   background-color: #000000;
-  height: 300px;
+  min-height: 13rem;
   position: relative;
-  width: 100%;
+  width: 100%; }
   @media screen and (min-width: 800px) {
-    float: right;
-    width: 50%;
-  }
-  p {
+    .latest-sermon {
+      float: right;
+      min-height: 0;
+      width: 50%; } }
+  .latest-sermon p {
     color: #fff;
-    margin-top: 5em;
-    text-align: center;
-  }
-}
+    text-align: center; }
 
 .mejs-container {
   background: #fff;
@@ -355,21 +274,13 @@ Homepage Latest Sermon Styles
   bottom: 50%;
   left: 14% !important;
   margin: 0 auto !important;
-  text-align: center;
-  // button {
-  //   background: #333333 !important;
-  // }
-}
+  text-align: center; }
+
 .mejs-controls {
-  background: brown !important;
-}
-
-
+  background: brown !important; }
 
 /******************************************
 Blog Page Styles - Not currently being used
 ******************************************/
-// .blog-post {
-//   margin: 0 auto 2em;
-//   width: 95%;
-// }
+
+/*# sourceMappingURL=style.css.map */

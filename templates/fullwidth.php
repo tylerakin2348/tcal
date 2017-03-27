@@ -1,11 +1,10 @@
 <?php
 /*
-Template Name: Contained Page
+Template Name: Full-Width Page
 */
 ?>
 
 <?php get_header(); ?>
-  <!-- <div class="page"> -->
 
     <?php
 
@@ -15,5 +14,5 @@ Template Name: Contained Page
 
     endwhile; endif;
     ?>
-  <!-- </div> -->
+
 <?php get_footer(); ?>

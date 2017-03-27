@@ -5,7 +5,6 @@ Template Name: Blog Page
 ?>
 
 <?php get_header(); ?>
-  <!-- <div class="page"> -->
 
     <?php
 
@@ -15,5 +14,5 @@ Template Name: Blog Page
 
     endwhile; endif;
     ?>
-  <!-- </div> -->
+
 <?php get_footer(); ?>

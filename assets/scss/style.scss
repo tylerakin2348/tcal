@@ -11,10 +11,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   overflow-x: hidden;
 }
-img {
-  border-style: none;
-  max-width: 100%;
-}
 
 p,
 li,
@@ -29,7 +25,6 @@ h6 {
   line-height: 1.5rem;
 }
 li {
-  // display: inline;s
   font-size: 1.3em;
   text-decoration: none;
   list-style: none;
@@ -50,12 +45,27 @@ h2 {
   font-size: 1rem;
 }
 img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 2em;
+  border-style: none;
   height: 40%;
-  width: 100%;
-
+  margin-bottom: 1em;
+  margin-right: 1em;
+  min-width: 100%;
+  @media screen and (min-width: 650px) {
+    margin-bottom: 0em;
+    min-width: 0%;
+  }
+}
+.aligncenter {
+  display: inline-block;
+  margin: 0 auto;
+}
+.alignleft {
+  display: inline-block;
+  float: left;
+}
+.alignright {
+  display: inline-block;
+  float: right;
 }
 .home-page,
 .page {
@@ -73,7 +83,6 @@ img {
 Heading Styles
 ******************************************/
 #top-header {
-  border-bottom: 3px solid #333333;
   min-height: 9em;
   width: 100%;
   @media screen and (min-width: 800px) {
@@ -87,9 +96,16 @@ Heading Styles
   text-align: center;
   @media screen and (min-width: 800px) {
     display: block;
+    margin-bottom: -4em;
   }
   .menu-item:hover {
     text-decoration: underline;
+  }
+  .menu li {
+    @media screen and (min-width: 800px) {
+      display: inline-block;
+      padding-bottom: 1em;
+    }
   }
 }
 
@@ -106,12 +122,23 @@ Heading Styles
     left: 0;
     width: 100%;
     top: 2em;
+    li {
+      @media screen and (min-width: 800px) {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+    }
   }
   &:hover {
     padding-bottom: 9em;
+    @media screen and (min-width: 800px) {
+      padding-bottom: 0;
+    }
     .sub-menu {
       display: inline;
       max-height: 25em;
+      // position: relative;
+      z-index: 1;
       a {
         color: #fff;
         display: block;
@@ -164,6 +191,7 @@ Heading Styles
   box-shadow: -1px -1px 1px #222222;
   height: 10%;
   position: fixed;
+  min-width: 0%;
   transition: all 2s ease;
   right: .2rem;
   top: 75%;
@@ -219,7 +247,7 @@ Specific Page Styles
   }
   iframe {
     overflow: hidden;
-    height: 90%;
+    height: 20rem;
     width: 100%;
   }
 }
@@ -279,12 +307,13 @@ Front Page Slider Styles -- https://codepen.io/cybrox/pen/cyiJI (Edited by Tyler
 }
 
 #sliderImages img {
+  height: 40%;
   margin: 0 auto;
   text-align: center;
   left: 0;
+  width: 100%;
   @media screen and (min-width: 800px) {
     float: left;
-    width: 100%;
   }
 }
 

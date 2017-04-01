@@ -11,7 +11,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   overflow-x: hidden; }
 
-p,
 li,
 ul,
 h1,
@@ -20,6 +19,11 @@ h3,
 h4,
 h5,
 h6 {
+  color: #237520;
+  font-size: initial;
+  line-height: 1.5rem; }
+
+p {
   font-size: initial;
   line-height: 1.5rem; }
 
@@ -182,9 +186,14 @@ Heading Styles
 /******************************************
 Specific Page Styles
 ******************************************/
+.about-page__img {
+  width: 100%; }
+
 .about-page__sub-pages {
   background-color: #333333;
-  border: 2px solid #ffffff;
+  background-position-y: 23%;
+  background-size: cover;
+  color: #ffffff;
   display: inline-block;
   font-size: initial;
   height: 75px;
@@ -194,14 +203,12 @@ Specific Page Styles
   width: 100%; }
   .about-page__sub-pages:hover {
     background-color: #336633; }
-  .about-page__sub-pages a {
-    color: #fff;
-    padding: 5em 7em; }
   .container__inner .about-page__sub-pages {
-    width: 99%; }
+    width: 100%; }
     @media screen and (min-width: 800px) {
       .container__inner .about-page__sub-pages {
-        width: 49%; } }
+        float: left;
+        width: 50%; } }
 
 .our-sunday-gatherings__content {
   display: inline-block;
